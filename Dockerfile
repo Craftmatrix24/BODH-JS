@@ -4,4 +4,4 @@ FROM nginx:alpine
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Copy full site content
-COPY . /usr/share/nginx/html/
+COPY /site /usr/share/nginx/html/
