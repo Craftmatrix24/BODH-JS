@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(226, 226, 226);
+    /*background-color: rgb(103, 91, 146);*/
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgb(25, 13, 68);
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    justify-content: flex-end;
+}
+
+#navbar{
+    display: flex;
+    
+}
+
+#navbar h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#active{
+    color: rgb(162, 255, 255);
+}
+
+
+#box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(58, 45, 105);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/*
+#box{
+    background-color: rgb(36, 22, 87);
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+#order{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+#pd1, #pd2{
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    color: white;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: white;
+}
+
+#to{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+#data{
+    font-size: 24px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#val{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px;  
+
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#buttoncontainer{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttoncontainer button{
+    padding: 3px;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+}
+
+#line{
+    background-color: white;
+    width: 90%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#answer{
+    margin-bottom: 10px;
+    color: white;
+}
+
+#answer div{
+    display: flex;
+    padding-left: 50px;
+}
+
+#answer div h3{
+    margin-left: 3px;
+}
+
+#answer h2{
+    margin-left: 10px;
+}
+
+#answer h3{
+    margin-left: 50px;
+}
+#answer h4{
+    margin-left: 0px;
+    margin-top: -3px;
+}
+
+#answer table{
+    margin-left: 50px;
+}
+
+#answer table td{
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#extra{
+    text-align: center;
+    color: white;
+    
+}
+
+#footer{
+    position: fixed;
+    background-color: black;
+    padding: 5px;
+    bottom: 0;
+
+    /* And if you want the div to be full-width: */
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+
+#footer h1{
+    cursor: pointer;
+}
+
+
+/*Extra*/
+.container {
+    display: none;
+    /*display: inline-block;*/
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+@media (max-width:1669px) {
+    #box{
+        width: 70%;
+    }
+}
+
+@media (max-width:1400px) {
+    #box{
+        width: 80%;
+    }
+}
+
+@media (max-width:1255px) {
+    #box{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:600px) {
+    #navbar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        /*display: none;*/
+        margin-top: 50px;
+        margin-right: -1000px;
+        background-color: rgb(226, 226, 226);
+        width: 300px;
+        height: 300rem;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+    #navbar h3{
+        color:black;
+    }
+
+    #navbar #active{
+        color:rgb(2, 60, 104);
+    }
+
+    #separator{
+        background-color: black;
+        height: 1px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #buttoncontainer button{
+        font-size: 24px;
+    }
+
+    body{
+        background-color: rgb(58, 45, 105);
+    }
+    #box{
+        background-color: transparent;
+        width: 100%;
+    }
+    .container {
+        display: inline-block;
+    }
+}
+
+@media (max-width:500px) {
+    #pd1, #pd2{
+        font-size: 17px;
+    }
+    #data input{
+        font-size: 20px;
+    }
+    #buttoncontainer button{
+        font-size: 20px;
+    }
+    #answer h2{
+        font-size: 20px;
+    }
+    #answer h3{
+        font-size: 17px;
+    }
+    #answer h4{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:300px) {
+    #order{
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+    }
+    #pd1, #pd2{
+        width: 300pxs;
+        margin: 0;
+        
+    }
+    #order h3{
+        padding: 0;
+    } 
+    #data input{
+        margin-top: 10px;
+    }
+}

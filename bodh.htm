@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BODH</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <div id="touch" class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+
+            <div id="navbar" class="active">
+                <a href="bodh.htm"><h3 id="active">Quick Convert</h3></a>
+                <div id="separator"></div>
+                <a href="wsol.htm"><h3>Convert with Solution</h3></a>
+                <div id="separator"></div>
+            </div>
+        </section>
+
+        <section id="operator">
+            <div id="box">
+                <h4>Binary | Base 2</h4>
+                <input type="text" placeholder="Binary Input" id="binary">
+
+                <h4>Octal | Base 8</h4>
+                <input type="text" placeholder="Octal Input" id="octal">
+
+                <h4>Decimal | Base 10</h4>
+                <input type="text" placeholder="Decimal Input" id="decimal">
+
+                <h4>Hex | Base 16</h4>
+                <input type="text" placeholder="Hex Input" id="hex">
+
+                <div id="buttoncontainer">
+                    <button id="convert">Convert Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <h1>RCABuilds</h1>
+        </section>
+
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
